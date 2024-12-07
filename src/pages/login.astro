@@ -20,14 +20,15 @@ const metadata = {
     subtitle="  Need help logging in? Check out our "
     inputs={[
       {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
+        
         type: 'email',
         name: 'email',
         label: 'Email',
+      },
+      {
+        type: 'password',
+        name: 'password',
+        label: 'Contraseña',
       },
     ]}
     disclaimer={{
@@ -36,6 +37,13 @@ const metadata = {
     }}
     description="Our support team typically responds within 24 business hours."
   />
+
+  <div class="text-center mt-4">
+    <p class="text-sm text-gray-600 dark:text-gray-400">
+      <span>Don't have an account yet?</span>
+      <a href="/signup" class="text-blue-600 hover:underline">Sign up here</a>
+    </p>
+  </div>
 
   <!-- Features2 Widget ************** -->
 

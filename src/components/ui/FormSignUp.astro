@@ -5,7 +5,7 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, button = 'Sign Up', description = '', disclaimer } = Astro.props;
 ---
 
-<form>
+<form action="/api/auth/register" method="post">
   {
     inputs &&
       inputs.map(
@@ -66,7 +66,9 @@ const { inputs, button = 'Sign Up', description = '', disclaimer } = Astro.props
       <a href="/login" class="text-blue-600 hover:underline">Log in here</a>
     </p>
     <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-4">
-      Need help signing up? Check out our <a href="/about" class="text-blue-600 hover:underline">FAQ section</a> for common issues. If you can't find the answer you're looking for, feel free to contact our support team. We're happy to assist you!
+      Need help signing up? Check out our <a href="/about" class="text-blue-600 hover:underline">FAQ section</a> for common
+      issues. If you can't find the answer you're looking for, feel free to contact our support team. We're happy to assist
+      you!
     </p>
   </div>
 
